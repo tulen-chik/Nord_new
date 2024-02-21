@@ -1,4 +1,4 @@
-const { DataTypes, Sequelize, DATE } = require("sequelize")
+const { DataTypes, Sequelize } = require("sequelize")
 
 const sequelize = new Sequelize({
     username: process.env.DB_USER,
@@ -70,8 +70,6 @@ Product.belongsTo(Category)
 
 Type.hasMany(Product)
 Product.belongsTo(Type)
-
-sequelize.sync()
 
 module.exports = {
     Type,

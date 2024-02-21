@@ -10,7 +10,7 @@ class userController {
     }
 
     static async auth(req, res, next) {
-        return res.json({message: "xui"})
+        return res.json({xui: "xuevyi"})
     }
 }
 
